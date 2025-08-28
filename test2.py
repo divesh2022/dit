@@ -3,12 +3,12 @@ import random
 def guess_the_number():
     """
     A simple 'Guess the Number' game.
-    The computer picks a number between 1 and 100, and the user tries to guess it.
+    The computer picks a number between 1 and 1000, and the user tries to guess it.
     """
-    secret_number = random.randint(1, 100) # Generate a random number between 1 and 100
+    secret_number = random.randint(1, 1000) # Generate a random number between 1 and 100
     attempts = 0
     print("Welcome to Guess the Number!")
-    print("I'm thinking of a number between 1 and 100.")
+    print("I'm thinking of a number between 1 and 1000.")
 
     while True: # Loop indefinitely until the user guesses correctly
         try:
