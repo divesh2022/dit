@@ -223,6 +223,29 @@ CourseCompletion(INT completion_id, INT student_id, INT course_id, VARCHAR statu
 **Description**: Lecture logs and course completion status.
 
 ---
+Here are the example datasets for the requested relations, based on the structured documentation from your GitHub repository:
+
+---
+
+## 🎓 Lecture & CourseCompletion
+
+### `Lecture`
+
+| lecture_id | faculty_id | course_id | topic            | delivery_date | format   | materials_link         |
+|------------|------------|-----------|------------------|----------------|----------|------------------------|
+| 1701       | 201        | 401       | ER Modeling      | 2025-08-18     | PPT      | /materials/erd.pptx    |
+| 1702       | 201        | 401       | Normalization    | 2025-08-25     | Video    | /videos/normalization.mp4 |
+
+### `CourseCompletion`
+
+| completion_id | student_id | course_id | status     | completion_date | feedback             |
+|----------------|------------|-----------|------------|------------------|----------------------|
+| 1801           | 101        | 401       | Completed  | 2025-09-20       | Strong understanding |
+| 1802           | 102        | 401       | Incomplete | NULL             | Missed final test    |
+
+---
+
+---
 
 ## 🧵 DiscussionBoard & NotificationPreference
 
@@ -230,7 +253,24 @@ CourseCompletion(INT completion_id, INT student_id, INT course_id, VARCHAR statu
 DiscussionBoard(INT post_id, INT author_id, VARCHAR role, INT course_id, TEXT content, TIMESTAMP created_at)
 NotificationPreference(INT preference_id, INT user_id, VARCHAR role, BOOLEAN notify_email, BOOLEAN notify_sms, BOOLEAN notify_app)
 ```
+---
+## 🧵 DiscussionBoard & NotificationPreference
 
+### `DiscussionBoard`
+
+| post_id | author_id | role   | course_id | content                         | created_at           |
+|---------|-----------|--------|-----------|----------------------------------|----------------------|
+| 1901    | 101       | student| 401       | “Can someone explain BCNF?”     | 2025-08-28 09:30:00  |
+| 1902    | 201       | faculty| 401       | “Slides for ERD uploaded.”      | 2025-08-28 10:00:00  |
+
+### `NotificationPreference`
+
+| preference_id | user_id | role    | notify_email | notify_sms | notify_app |
+|----------------|---------|---------|---------------|-------------|-------------|
+| 2001           | 101     | student | true          | false       | true        |
+| 2002           | 201     | faculty | true          | true        | false       |
+
+---
 **Description**: Student engagement and notification settings.
 
 ---
@@ -243,6 +283,26 @@ FacultyLectureLog(INT faculty_id, VARCHAR name, VARCHAR topic, DATE delivery_dat
 ```
 
 **Description**: Aggregated views for oversight and reporting.
+
+---
+
+## 📊 StudentPerformanceDashboard & FacultyLectureLog
+
+### `StudentPerformanceDashboard`
+
+| student_id | name       | total_score | course_status | marks_obtained | grade |
+|-------------|------------|--------------|----------------|------------------|--------|
+| 101         | Aditi Rao | 85.5         | Completed      | 42.5             | A      |
+| 102         | Ravi Singh| 62.0         | Incomplete     | 28.0             | C      |
+
+### `FacultyLectureLog`
+
+| faculty_id | name       | topic         | delivery_date | materials_link         |
+|-------------|------------|---------------|----------------|------------------------|
+| 201         | Dr. Mehta | ER Modeling   | 2025-08-18     | /materials/erd.pptx    |
+| 201         | Dr. Mehta | Normalization | 2025-08-25     | /videos/normalization.mp4 |
+
+---
 
 ---
 
