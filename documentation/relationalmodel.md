@@ -263,6 +263,6 @@ AssignmentAITrainingData(INT submission_id,INT student_id,INT assignment_id,VARC
 | 2001          | 101        | 501            | DIT_editor  | 3                 | 120            | true                  | false                 | 0.78             | true             | manual             | 7.5            | true               | 2025-09-09 10:30:00    | macro                    | true                 | Automation Architect  |
 
 ---
-
+## ER DIAGRAM 
 ---
 ![alt text](image.png)
