@@ -3,7 +3,7 @@ import google.generativeai as genai
 import streamlit as st
 
 # Load API key from environment (ensure GEMINI_API_KEY is correctly set in your environment)
-GEMINI_API_KEY = "AIzaSyDFUN1Mb0BOiawDREOim3M8S25RonQFxOM" # Replace with your actual API key or ensure it's loaded from env
+GEMINI_API_KEY = "***********************************" # Replace with your actual API key or ensure it's loaded from env
 API_KEY = GEMINI_API_KEY
 genai.configure(api_key=API_KEY)
 
