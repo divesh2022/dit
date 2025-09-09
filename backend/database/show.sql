@@ -1,0 +1,67 @@
+use smss;
+-- STUDENT
+SELECT * FROM Student;
+
+-- FACULTY
+SELECT * FROM Faculty;
+
+-- FACULTY DETAILS
+SELECT * FROM FacultySubjects;
+SELECT * FROM FacultyEducation;
+SELECT * FROM FacultyResearchArea;
+
+-- HOD
+SELECT * FROM HOD;
+SELECT * FROM HODCommunication;
+
+-- COURSE
+SELECT * FROM Course;
+
+-- ASSIGNMENT
+SELECT * FROM Assignment;
+
+-- COURSE SCHEDULE
+SELECT * FROM CourseSchedule;
+
+-- STUDENT SCHEDULE
+SELECT * FROM StudentSchedule;
+
+-- ATTENDANCE
+SELECT * FROM Attendance;
+
+-- GRADE
+SELECT * FROM Grade;
+
+-- SUBMISSION
+SELECT * FROM Submission;
+
+-- MESSAGE
+SELECT * FROM Message;
+
+-- PARENT
+SELECT * FROM Parent;
+
+-- TEACHING MATERIAL
+SELECT * FROM TeachingMaterial;
+
+-- STUDENT ASSESSMENT
+SELECT * FROM StudentAssessment;
+
+-- TEST & RESULT
+SELECT * FROM Test;
+SELECT * FROM TestResult;
+
+-- LECTURE
+SELECT * FROM Lecture;
+
+-- COURSE COMPLETION
+SELECT * FROM CourseCompletion;
+
+-- DISCUSSION BOARD
+SELECT * FROM DiscussionBoard;
+
+-- NOTIFICATION PREFERENCE
+SELECT * FROM NotificationPreference;
+
+-- ASSIGNMENT AI TRAINING DATA
+SELECT * FROM AssignmentAITrainingData;
